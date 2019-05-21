@@ -61,7 +61,7 @@ class InteractiveRecord
     attribute_key = attribute.keys.join()
     attribute_value = attribute.values.join()
     sql = <<- SQL 
-    SELECT 
+    SELECT * FROM #{self.table_name}
   end 
   
 end
