@@ -66,7 +66,7 @@ class InteractiveRecord
     WHERE #{attribute_key} = "#{attrubute_value}"
     LIMIT 1
     SQL
-    
+     el = DB[:conn].execute(sql)
   end 
   
 end
