@@ -62,7 +62,7 @@ class InteractiveRecord
     attribute_value = attribute.values.first
     
     sql = "SELECT * FROM #{self.table} WHERE #{attribute_key} = '#{attribute_value}'"
-     el = DB[:conn].execute(sql)
+    el = DB[:conn].execute(sql)
   end 
   
 end
