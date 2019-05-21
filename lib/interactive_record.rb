@@ -60,11 +60,13 @@ class InteractiveRecord
   def self.find_by(attribute)
     attribute_key = attribute.keys.join()
     attribute_value = attribute.values.join()
+    
     sql = <<- SQL 
     SELECT * FROM #{self.table_name}
     WHERE #{attribute_key} = "#{attrubute_value}"
     LIMIT 1
     SQL
+    
   end 
   
 end
