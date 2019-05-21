@@ -61,7 +61,7 @@ class InteractiveRecord
     attribute_key = attribute.keys.join()
     attribute_value = attribute.values.first
     
-    sql = "SELECT * FROM #{self.table} WHERE #{attribute_key} = '#{attribute_value}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute_key} = '#{attribute_value}'"
     el = DB[:conn].execute(sql)
   end 
   
